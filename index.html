@@ -9,18 +9,18 @@
 Hello, Women Who Code!
 
 <div ng-controller='mainController'>
-  <chart-directive dogs=1 horses=3 cows=8></chart-directive>
+  <chart-directive counts=counts></chart-directive>
 
   <button onClick='alert("woohhoo!");'>-</button>
-  <input type='text' ng-model='dogs'/>
+  <input type='text' ng-model='counts.dogs'/>
   <button ng-click='incrementAnimal("dogs")'>+</button>
 
   <button>-</button>
-  <input type='text' ng-model='horses'/>
+  <input type='text' ng-model='counts.horses'/>
   <button>+</button>
 
   <button>-</button>
-  <input type='text' ng-model='cows'/>
+  <input type='text' ng-model='counts.cows'/>
   <button>+</button>
 </div>
 <script type='text/javascript' src='js/app.js'></script>
