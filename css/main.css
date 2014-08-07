@@ -1,0 +1,14 @@
+.dogs {
+  position: relative;
+  left: 50px;
+}
+
+.horses {
+  position: relative;
+  left: 200px;
+}
+
+.cows {
+  position: relative;
+  left: 350px;
+}

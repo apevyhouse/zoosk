@@ -1,6 +1,7 @@
 <html>
 <head>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/rickshaw/1.4.6/rickshaw.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href='css/main.css'></style>
+  <link rel="stylesheet" type="text/css" href='css/rickshaw.css'></style>
   <script type="text/javascript" src='lib/angular.js'></script>
   <script type="text/javascript" src='lib/d3.js'></script>
   <script type="text/javascript" src='lib/rickshaw.js'></script>
@@ -11,11 +12,11 @@ Hello, Women Who Code!
 <div ng-controller='mainController'>
   <chart-directive counts=counts></chart-directive>
 
-  <div ng-repeat='animal in animals'>
+  <span ng-class='animal' ng-repeat='animal in animals'>
     <button ng-click='decrementAnimal(animal)'>-</button>
     <input type='text' ng-model='counts[animal]'/>
     <button ng-click='incrementAnimal(animal)'>+</button>
-  </div>
+  </span>
 </div>
 <script type='text/javascript' src='js/app.js'></script>
 <script type='text/javascript' src='js/controllers/mainController.js'></script>
