@@ -5,9 +5,26 @@
   <script type="text/javascript" src='lib/d3.js'></script>
   <script type="text/javascript" src='lib/rickshaw.js'></script>
 </head>
-<body>
+<body ng-app='zoosk'>
 Hello, Women Who Code!
-<div id='chart'></div>
+
+<div ng-controller='mainController'>
+  <chart-directive dogs=1 horses=3 cows=8></chart-directive>
+
+  <button onClick='alert("woohhoo!");'>-</button>
+  <input type='text' ng-model='dogs'/>
+  <button ng-click='incrementAnimal("dogs")'>+</button>
+
+  <button>-</button>
+  <input type='text' ng-model='horses'/>
+  <button>+</button>
+
+  <button>-</button>
+  <input type='text' ng-model='cows'/>
+  <button>+</button>
+</div>
 <script type='text/javascript' src='js/app.js'></script>
+<script type='text/javascript' src='js/controllers/mainController.js'></script>
+<script type='text/javascript' src='js/directives/chartDirective.js'></script>
 </body>
 </html>
